@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/ivTripIcon"
+            android:layout_width="32dp"
+
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/ic_motorcycle_black_24px" />
+
+        <ImageView
+            android:id="@+id/ivTripDeleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivTripDeleteIcon"
+            android:layout_toRightOf="@+id/ivTripIcon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTripDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Monday, 21 Jan 2017"
+                android:textColor="@color/primaryText"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tvTripPoints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="1271 Points"
+                android:textColor="@color/secondaryText"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
